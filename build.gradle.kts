@@ -1,23 +1,13 @@
 plugins {
-    kotlin("js") version "1.6.255-SNAPSHOT"
+    kotlin("multiplatform") version "1.7.0" apply false // 1.7.255-SNAPSHOT
+    kotlin("plugin.serialization") version "1.7.0" apply false
 }
 
-group = "me.user"
-version = "1.0-SNAPSHOT"
+allprojects {
+    version = "0.1.1"
 
-repositories {
-    mavenCentral()
-    mavenLocal()
-}
-
-
-
-
-kotlin {
-    js(IR) {
-        binaries.executable()
-        nodejs {
-
-        }
+    repositories {
+        mavenLocal()
+        mavenCentral()
     }
 }

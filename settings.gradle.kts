@@ -1,7 +1,11 @@
+rootProject.name = "node-js-demo"
+
 pluginManagement {
     repositories {
         gradlePluginPortal()
         mavenLocal()
     }
 }
-rootProject.name = "node-js-demo"
+
+include("test-module-1")
+include("node-js-main")
