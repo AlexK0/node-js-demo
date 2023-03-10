@@ -12,13 +12,6 @@ kotlin {
         nodejs {
         }
     }
-    sourceSets {
-        val jsMain by getting {
-            dependencies {
-                implementation(project(":test-module-2"))
-            }
-        }
-    }
 }
 
 tasks.withType<Kotlin2JsCompile> {

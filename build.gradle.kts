@@ -1,6 +1,6 @@
 plugins {
-    kotlin("multiplatform") version "1.7.0" apply false // 1.7.255-SNAPSHOT
-    kotlin("plugin.serialization") version "1.7.0" apply false
+    kotlin("multiplatform") version "1.9.255-SNAPSHOT" apply false
+    kotlin("plugin.serialization") version "1.9.255-SNAPSHOT" apply false
 }
 
 allprojects {
@@ -11,3 +11,6 @@ allprojects {
         mavenCentral()
     }
 }
+
+
+

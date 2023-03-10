@@ -7,5 +7,6 @@ pluginManagement {
     }
 }
 
+include("test-module-2")
 include("test-module-1")
 include("node-js-main")

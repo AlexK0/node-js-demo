@@ -1,18 +1,31 @@
+import org.jetbrains.kotlin.gradle.tasks.Kotlin2JsCompile
+
 plugins {
-    kotlin("js")
+    kotlin("multiplatform")
 }
 
 kotlin {
+
     js(IR) {
+        useCommonJs()
+
         binaries.executable()
         nodejs {
+        }
+        browser {
+        }
+    }
+    sourceSets {
+        val jsMain by getting {
+            dependencies {
+                implementation(project(":test-module-1"))
+//                implementation(project(":test-module-2"))
+            }
         }
     }
 }
 
-dependencies {
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-js")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-js:1.6.3")
-
-    implementation(project(":test-module-1"))
+tasks.withType<Kotlin2JsCompile> {
+    kotlinOptions.languageVersion = "2.0"
 }
+
