@@ -11,6 +11,3 @@ allprojects {
         mavenCentral()
     }
 }
-
-
-

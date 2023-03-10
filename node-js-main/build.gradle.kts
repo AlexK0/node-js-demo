@@ -28,4 +28,3 @@ kotlin {
 tasks.withType<Kotlin2JsCompile> {
     kotlinOptions.languageVersion = "2.0"
 }
-
