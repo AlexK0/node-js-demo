@@ -1,5 +1,4 @@
 fun main() {
-    println(mainModule())
-    println(module1())
-    println(module1callModule2())
+    val a = StringDemo("O")
+    println(a.plusK())
 }

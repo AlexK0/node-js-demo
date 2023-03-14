@@ -19,7 +19,6 @@ kotlin {
         val jsMain by getting {
             dependencies {
                 implementation(project(":test-module-1"))
-//                implementation(project(":test-module-2"))
             }
         }
     }

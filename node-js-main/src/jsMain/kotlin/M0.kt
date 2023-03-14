@@ -1,1 +1,0 @@
-fun mainModule() = "main module"
