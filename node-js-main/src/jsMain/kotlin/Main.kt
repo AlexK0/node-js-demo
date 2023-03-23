@@ -1,4 +1,3 @@
 fun main() {
-    val a = StringDemo("O")
-    println(a.plusK())
+    println(MODULE1_OK)
 }
